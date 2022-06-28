@@ -1,4 +1,4 @@
-package com.chetan;
+package com.chetan.bs;
 
 public class CeilingAndFloor {
 
