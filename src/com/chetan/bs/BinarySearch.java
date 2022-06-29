@@ -4,7 +4,7 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 		int[] arr = {1,2,4,6,8,10};
-		System.out.println(findElement(arr, 10));
+		System.out.println(findElement(arr, 6));
 	}
 	
 	static int findElement(int[] arr, int target) {
@@ -13,7 +13,7 @@ public class BinarySearch {
 		
 		
 		while(start <= end) {
-			int mid = (start + end)/2;
+			int mid = start + (end-start)/2;
 			
 			if(target < arr[mid] ) {
 				end= mid-1;
@@ -26,6 +26,4 @@ public class BinarySearch {
 		return -1;
 		
 	}
-	
-
 }
