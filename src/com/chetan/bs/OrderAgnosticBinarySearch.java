@@ -5,12 +5,12 @@ public class OrderAgnosticBinarySearch {
 	public static void main(String[] args) {
 		int[] arrAsc = {1,2,4,6,8,10};
 		int[] arrDsc = {10, 9, 7, -1, -6, -10};
-		System.out.println(findElement(arrAsc, 10));
+		System.out.println(orderAgnosticBS(arrAsc, 10));
 		
-		System.out.println(findElement(arrDsc, 10));
+		System.out.println(orderAgnosticBS(arrDsc, -10));
 	}
 
-	static int findElement(int[] arr, int target) {
+	static int orderAgnosticBS(int[] arr, int target) {
 		int start = 0;
 		int end = arr.length -1;
 		
