@@ -3,7 +3,7 @@ package com.chetan.bs;
 public class RotatedSortedArray {
 
 	public static void main(String[] args) {
-		int[] arr = {18,35,1,3,7,10, 16};
+		int[] arr = {1,3,7,10, 16};
 
 		System.out.println(rotatedBinarySearch(arr, 10));
 		
@@ -12,7 +12,9 @@ public class RotatedSortedArray {
 	static int rotatedBinarySearch(int[] arr, int target) {
 		
 		int pivot = findPivot(arr);
-		if(target > arr[pivot]) {
+		
+		
+		if(pivot != -1 && target > arr[pivot]) {
 			return binarySearch(arr, target, 0, pivot);
 		} else {
 			return binarySearch(arr, target, pivot+1, arr.length-1);
