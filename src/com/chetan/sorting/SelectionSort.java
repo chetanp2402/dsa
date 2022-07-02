@@ -19,19 +19,29 @@ public class SelectionSort {
 			int max = arr[0];
 			int maxIndex = 0;
 			for (int i = 0; i < arr.length - j; i++) {
-				if(max<arr[i]) {
+				if(max < arr[i]) {
 					max = arr[i];
 					maxIndex = i;
 				}
 			}
+			
+			//Last index
+			int last = arr.length-1 -j;
 			//swap
-			int temp = arr[arr.length-1 -j];
-			arr[arr.length-1 -j] = max;
-			arr[maxIndex] =temp;
+
+			swap(arr, maxIndex, last);
 		}
 		
 		return arr;
 	}	
+	
+	static int[] swap(int [] arr, int first, int second) {
+		int temp = arr[first];
+		arr[first] = arr[second];
+		arr[second]= temp;
+		
+		return arr;
+	}
 	
 
 }
