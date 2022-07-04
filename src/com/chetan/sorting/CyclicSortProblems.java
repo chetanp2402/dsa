@@ -14,9 +14,9 @@ public class CyclicSortProblems {
 	static int cyclicSortFindMissingNumber(int[] arr) {
 		int i = 0;
 		 while (i< arr.length) {
-			 
-			 if(arr[i] != i && arr[i]<arr.length) {
-				 swap(arr, i, arr[i]);
+			 int correct = arr[i];
+			 if(arr[i]<arr.length && arr[i] != arr[correct]) {
+				 swap(arr, i, correct);
 			 } else {
 				 i++;
 				}
