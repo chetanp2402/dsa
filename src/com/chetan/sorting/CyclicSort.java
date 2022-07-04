@@ -43,4 +43,17 @@ public class CyclicSort {
 		return arr;		
 	}
 	
+	static int[] cyclicSortFromZero(int[] arr){
+		int i = 0;
+		while(i<arr.length) {
+			int correct = i;
+			if(arr[i] != correct) {
+				swap(arr, i, arr[correct]);
+			}else {
+			i++;
+			}
+		}
+		return arr;		
+	}
+	
 }
