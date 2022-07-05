@@ -1,6 +1,6 @@
 package com.chetan.sorting;
 
-public class CyclicSortProblems {
+public class CyclicSortMissingNumbers {
 
 	public static void main(String[] args) {
 
