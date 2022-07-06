@@ -7,7 +7,7 @@ public class CyclicSortMissingNumbers {
 
 	public static void main(String[] args) {
 
-		int [] arr = {4,2,1,4,2,8,5,8,9};
+		int [] arr = {4,2,1,4,2,8,5,8,8};
 		System.out.println(cyclicSortFindMissingNumbers(arr));
 		
 	}
