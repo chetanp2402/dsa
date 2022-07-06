@@ -5,6 +5,7 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		int[] arr = {1,2,4,6,8,10};
 		System.out.println(findElement(arr, 6));
+
 	}
 	
 	static int findElement(int[] arr, int target) {
