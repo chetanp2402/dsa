@@ -7,7 +7,58 @@ public class Patterns {
 //        pattern2(5);
 //        pattern3(5);
 //        pattern4(5);
-        pattern5(5);
+//        pattern5(5);
+//        pattern6(5);
+//        pattern7(5);
+        pattern8(5);
+    }
+
+    /*8.        *
+               ***
+              *****
+             *******
+            *********    */
+    /*
+    * i-0 j -4
+    * i-1 j -3,4,5
+    * i-2 j -2,3,4,5,6
+    * i-3 j -1,2,3,4,5,6,7
+    * i-4 j -0,1,2,3,4,5,6,7,8
+    *
+    * */
+    static void pattern8(int n){
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col < 2*n; col++) {
+                if(col< n-row || col >n+ row) {
+                    System.out.print(" ");
+                }else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+   /*  7.   *****
+             ****
+              ***
+               **
+                *          */
+
+
+
+
+    static void pattern7(int n){
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col < n; col++) {
+                if(col< row){
+                    System.out.print(" ");
+                }else{
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
     }
 
 /*    1.    *****
@@ -92,6 +143,26 @@ public class Patterns {
             }
 
         }
+/*  6.      *
+           **
+          ***
+         ****
+        *****  */
+
+    static void pattern6(int n){
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col <= n; col++) {
+                if(col>= n-row){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+
 
 
 
