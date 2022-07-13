@@ -10,7 +10,34 @@ public class Patterns {
 //        pattern5(5);
 //        pattern6(5);
 //        pattern7(5);
-        pattern8(5);
+//        pattern8(5);
+        pattern9(5);
+    }
+
+  /*  9.    *********
+             *******
+              *****
+               ***
+                *           */
+/*
+*    i-0   j- 0,1,2,3,4,5,6,7,8
+*    i-1   j- 1,2,3,4,5,6,7
+*    i-2   j- 2,3,4,5,6
+*    i-3   j- 3,4,5
+*    i-4   j- 4
+*
+* */
+    static void pattern9(int n){
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col < 2*n-1; col++) {
+                if(col>= row && col < 2*n -1 - row ) {
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
     }
 
     /*8.        *
