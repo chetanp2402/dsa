@@ -5,8 +5,8 @@ public class SkipCharacter {
     public static void main(String[] args) {
         String input = "baccad";
 //        System.out.println(skipCharacter(input, new String()));
-
-        System.out.println(skipCharacterWithOneInput(input));
+        String ans = skipCharacterWithOneInput(input);
+        System.out.println(ans);
 
     }
 
@@ -30,12 +30,13 @@ public class SkipCharacter {
         if(input.isEmpty()){
             return "";
         }
-
-        if(input.charAt(0) != 'a'){
-            return input.charAt(0) + skipCharacterWithOneInput(input.substring(1));
+        char ch = input.charAt(0);
+        if( ch != 'a'){
+            String ans = ch + skipCharacterWithOneInput(input.substring(1));
+            return  ans;
         }
-
-        return skipCharacterWithOneInput(input.substring(1));
+        String ans = skipCharacterWithOneInput(input.substring(1));
+        return ans  ;
 
     }
 }
