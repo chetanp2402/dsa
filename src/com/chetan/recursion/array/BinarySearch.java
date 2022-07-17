@@ -1,4 +1,4 @@
-package com.chetan.recursion;
+package com.chetan.recursion.array;
 
 public class BinarySearch {
 

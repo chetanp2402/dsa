@@ -1,4 +1,4 @@
-package com.chetan.recursion;
+package com.chetan.recursion.beginner;
 
 public class Sum {
     public static void main(String[] args) {
