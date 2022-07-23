@@ -34,7 +34,7 @@ public class MergeSort {
                 mix[k] = left[i];
                 i++;
             }else{
-                mix[j]=right[j];
+                mix[k]=right[j];
                 j++;
             }
             k++;
